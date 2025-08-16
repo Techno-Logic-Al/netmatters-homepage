@@ -1,0 +1,25 @@
+name: Build CSS
+on:
+  push:
+    branches: [ "main" ]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with: { persist-credentials: false }
+      - uses: actions/setup-node@v4
+        with: { node-version: '20' }
+      - run: npm i -g sass
+      - run: sass scss/style.scss css/style.css --style=compressed --no-source-map
+      - name: Commit built CSS
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add css/style.css
+          git commit -m "Build CSS" || echo "No changes"
+      - name: Push changes
+        uses: ad-m/github-push-action@v0.8.0
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: main
