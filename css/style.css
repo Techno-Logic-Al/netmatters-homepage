@@ -1584,6 +1584,7 @@ a.strong-paragraph:hover {
   right: 0;
   top: 10px;
   font-size: 0.75rem;
+  font-weight: bold;
   line-height: 1.438rem;
   padding: 0 10px;
 }
@@ -1632,7 +1633,6 @@ a.strong-paragraph:hover {
 .btn-ln {
   text-decoration: none;
   text-transform: uppercase;
-  text-weight: bold;
   color: #FFF;
 }
 .btn-ln:hover {
