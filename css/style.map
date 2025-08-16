@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "style.css",
+	"sources": [
+		"../scss/style.scss"
+	],
+	"sourcesContent": [
+		"@use \"layouts\";\n@use \"utilities\";\n@use \"vendors\";\n"
+	],
+	"names": [],
+	"mappings": "AAAA,IAAI,CAAJ,SAAI;AACJ,IAAI,CAAJ,WAAI;AACJ,IAAI,CAAJ,SAAI"
+}
