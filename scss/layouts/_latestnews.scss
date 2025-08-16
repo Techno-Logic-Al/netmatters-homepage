@@ -44,7 +44,8 @@
     padding-top: 30px;
 }
 
-.it-2 {
+// Removed .it-2 special styles for consistency
+// .it-2 {
     @include mq(m) {
         display: none;
     }
@@ -115,7 +116,8 @@
     }
 }
 
-.it-2 {
+// Removed .it-2 special styles for consistency
+// .it-2 {
 
     h3 {
         white-space: nowrap;
@@ -313,4 +315,3 @@
     display: flex;
     flex-direction: row;
 }
-
