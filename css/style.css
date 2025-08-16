@@ -1632,6 +1632,7 @@ a.strong-paragraph:hover {
 .btn-ln {
   text-decoration: none;
   text-transform: uppercase;
+  text-weight: bold;
   color: #FFF;
 }
 .btn-ln:hover {
